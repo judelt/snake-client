@@ -5,7 +5,8 @@ const connect = function() {
     port: 50542
   });
   conn.on('connect', function(){
-   conn.write('HI, I am connected');
+   console.log("Successfully connected to game server");
+   conn.write("Name: JMP");
   });
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
